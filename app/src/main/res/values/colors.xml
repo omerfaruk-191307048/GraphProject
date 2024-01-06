@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="loginBgColor">#91851B</color>
+    <color name="loginTxtColor">#FFFFFF</color>
+    <color name="trans">#00000000 </color>
+    <color name="feedBackColor">#469749</color>
+    <color name="gitarFragmentBgColor">#68CAD6</color>
+    <color name="detayActivityTextColor">#000000</color>
+    <color name="uyeOlHintColor">#B4B8B6</color>
+    <color name="bg">#523783</color>
+    <color name="btnColor">#0F8C9C</color>
+    <color name="btnRed">#FF0000</color>
+    <color name="bgg">#cccccc</color>
+    <color name="editTxtBg">#30ffffff</color>
+    <color name="programDuzenleItemBg">#B9A2E0</color>
+</resources>

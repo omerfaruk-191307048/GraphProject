@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?><!-- fragment_ders.xml -->
+<!-- fragment_ders.xml -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/bg"
+    android:padding="16dp"
+    tools:context=".ProgramGosterActivity">
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

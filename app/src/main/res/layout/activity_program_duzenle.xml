@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProgramDuzenleActivity"
+    android:background="@color/bg">
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+      <RelativeLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/program_duzenle_activity_txtBilgi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="10dp"
+            android:text="Ders Ata"
+            android:textAlignment="center"
+            android:textColor="@color/loginTxtColor"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/program_duzenle_activity_txtHocaBilgi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/program_duzenle_activity_txtBilgi"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="Hoca İsmi"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/program_duzenle_activity_editTextHoca"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/program_duzenle_activity_txtHocaBilgi"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:background="@color/programDuzenleItemBg"
+            android:enabled="false"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textColorHint="#A59C9C"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/program_duzenle_activity_txtDersAdi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/program_duzenle_activity_editTextHoca"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="Ders Seç"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <Spinner
+            android:id="@+id/program_duzenle_activity_editTextDersSpinner"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/program_duzenle_activity_txtDersAdi"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:background="@color/programDuzenleItemBg"
+            android:hint="Ders ismini giriniz"
+            android:spinnerMode="dropdown"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textColorHint="#A59C9C"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/program_duzenle_activity_txtGun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/program_duzenle_activity_editTextDersSpinner"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="Gün Seç"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <Spinner
+            android:id="@+id/program_duzenle_activity_editTextDersGunSpinner"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/program_duzenle_activity_txtGun"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:background="@color/programDuzenleItemBg"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textColorHint="#A59C9C"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/program_duzenle_activity_txtSaat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/program_duzenle_activity_editTextDersGunSpinner"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="Saat Seç"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <Spinner
+            android:id="@+id/program_duzenle_activity_editTextDersSaatSpinner"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/program_duzenle_activity_txtSaat"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:background="@color/programDuzenleItemBg"
+            android:hint="Ders kredisini giriniz"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textColorHint="#A59C9C"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/program_duzenle_activity_btnKaydet"
+            android:layout_width="230dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/program_duzenle_activity_editTextDersSaatSpinner"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/btnColor"
+            android:onClick="dersAtaOnClick"
+            android:text="Kaydet"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/program_duzenle_activity_btnKaydetgeri"
+            android:layout_width="230dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/program_duzenle_activity_btnKaydet"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/btnColor"
+            android:drawableRight="@drawable/baseline_keyboard_return_24"
+            android:onClick="programDuzenleActivityGeriOnClick"
+            android:text="Geri Dön"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/program_duzenle_activity_btnGetData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/program_duzenle_activity_btnKaydetgeri"
+            android:layout_centerHorizontal="true"
+            android:onClick="programEkleActivityGetDataOnClick"
+            android:visibility="invisible"
+            android:text="Get Data" />
+
+        <Button
+            android:id="@+id/program_duzenle_activity_btnDropSaat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/program_duzenle_activity_btnGetData"
+            android:layout_centerHorizontal="true"
+            android:onClick="dersProgramTabloDropOnClick"
+            android:text="Drop"
+             />
+      </RelativeLayout>
+
+    </LinearLayout>
+  </RelativeLayout>
+
+</ScrollView>

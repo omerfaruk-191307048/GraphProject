@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    tools:context=".DersEkleActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/activity_profile_txtBilgi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="10dp"
+                android:text="Ders Ekle"
+                android:textAlignment="center"
+                android:textColor="@color/loginTxtColor"
+                android:textSize="35sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/ders_ekle_activity_editTextHoca"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="40dp"
+                android:background="#30ffffff"
+                android:enabled="false"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textColorHint="#A59C9C"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/ders_ekle_activity_editTextDersIsmi"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="#30ffffff"
+                android:hint="Ders ismini giriniz"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textColorHint="#A59C9C"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/ders_ekle_activity_editTextDersKredi"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="#30ffffff"
+                android:hint="Ders kredisini giriniz"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textColorHint="#A59C9C"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/ders_ekle_activity_radioBtnBir"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#30ffffff"
+                        android:checked="false"
+                        android:text="1. sınıf   "
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textColorHint="#A59C9C"
+                        android:textSize="20sp" />
+
+                    <RadioButton
+                        android:id="@+id/ders_ekle_activity_radioBtnIki"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#30ffffff"
+                        android:checked="false"
+                        android:text="2. sınıf   "
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textColorHint="#A59C9C"
+                        android:textSize="20sp" />
+
+                    <RadioButton
+                        android:id="@+id/ders_ekle_activity_radioBtnUc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#30ffffff"
+                        android:checked="false"
+                        android:text="3. sınıf   "
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textColorHint="#A59C9C"
+                        android:textSize="20sp" />
+
+                    <RadioButton
+                        android:id="@+id/ders_ekle_activity_radioBtnDort"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#30ffffff"
+                        android:checked="false"
+                        android:text="4. sınıf   "
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textColorHint="#A59C9C"
+                        android:textSize="20sp" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/ders_ekle_activity_btnKaydet"
+                android:layout_width="230dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/btnColor"
+                android:onClick="dersKaydetOnClick"
+                android:text="Kaydet"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/activity_profil_geri"
+                android:layout_width="230dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/activity_profile_guncelle"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/btnColor"
+                android:drawableRight="@drawable/baseline_keyboard_return_24"
+                android:onClick="dersEkleActivityGeriOnClick"
+                android:text="Geri Dön"
+                android:textSize="20sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="dersEkleGetDataOnClick"
+                android:visibility="invisible"
+                android:text="Get Data" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>
